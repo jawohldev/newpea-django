@@ -1,6 +1,6 @@
 from companydjango import settings
 username=settings.DEFAULT_FROM_EMAIL
-password=EMAILHOST_PASS
+password=settings.EMAILHOST_PASS
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import smtplib
