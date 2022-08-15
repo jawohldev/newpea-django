@@ -12,7 +12,7 @@ def send_mail(html,text='Email_body',subject='Hello word', from_email='',to_emai
     msg['Subject']=subject
     txt_part=MIMEText(text,'plain')
     msg.attach(txt_part)
-    html_part = MIMETEXT(f"<p>Here is yo nigga </p><h1>{html}</h1>",'html')
+    html_part = MIMEText(f"<p>Here is yo nigga </p><h1>{html}</h1>",'html')
     msg.attach(html_part)
     msg_str=msg.as_string()
     server=smtplib.SMTP(host='smtp.zeptomail.com',port=587)

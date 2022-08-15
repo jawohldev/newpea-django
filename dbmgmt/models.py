@@ -3,7 +3,9 @@ from django.db import models
 
 # Create your models here.
 class ContactForm(models.Model):
-    CustomerName = models.CharField(max_length=200)
+    CustomerFirstName = models.CharField(max_length=200)
+    CustomerLastName = models.CharField(max_length=200)
+    CompanyName = models.CharField(max_length=200)
     Subject = models.CharField(max_length=200)
     CustomerEmail = models.CharField(max_length=200)
     Message = models.CharField(max_length=4096)
